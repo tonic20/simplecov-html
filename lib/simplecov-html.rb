@@ -100,7 +100,8 @@ module SimpleCov
       end
 
       def link_to_source_file(source_file)
-        %(<a href="##{id source_file}" class="src_link" title="#{shortened_filename source_file}">#{shortened_filename source_file}</a>)
+        # %(<a href="##{id source_file}" class="src_link" title="#{shortened_filename source_file}">#{shortened_filename source_file}</a>)
+        shortened_filename(source_file)
       end
     end
   end
